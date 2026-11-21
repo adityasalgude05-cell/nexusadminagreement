@@ -184,15 +184,14 @@ var WEBHOOK = "";
 /* Duplicate and fake-sign protection (needs a free Firebase project, see SETUP-Firebase.txt).
    Paste the Firebase web config object here, e.g. {apiKey:"...",authDomain:"...",projectId:"..."}. Leave null to run without protection. */
 var FIREBASE = {
-   apiKey: "AIzaSyD1l6ewr_LicDRVT2Pns_qG8iTjChIHbjs",
+  apiKey: "...",
   authDomain: "nexusadminagreement.firebaseapp.com",
   projectId: "nexusadminagreement",
   storageBucket: "nexusadminagreement.firebasestorage.app",
   messagingSenderId: "62924597614",
   appId: "1:62924597614:web:2ea470bc3c26a881d9797f"
 };
-/* Emails (lowercase) of higher-ups who can approve, revoke and manage the allowed list. Must match firestore.rules. */
-var APPROVERS = [adityasalgude05@gmail.com];
+var APPROVERS = ["adityasalgude05@gmail.com"];
 
 var CLAUSES = [
  ["My role",[
