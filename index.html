@@ -1,0 +1,578 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Admin Team Agreement</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=Dancing+Script:wght@600&display=swap">
+<style>
+/* Layout: one reading column. Clauses first, then a sign-off form whose live card and Discord text sit under it. */
+:root{
+  --bg:#F5F6F9; --surface:#FFFFFF; --fg:#1B2433; --muted:#5C6678; --line:#D9DEE8;
+  --accent:#27478C; --accent-fg:#FFFFFF; --soft:#E8EEFA; --ok:#1F7A4D; --warn:#B3261E; --warn-soft:#FCEBE9;
+  --font-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-head:'Space Grotesk','Inter',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1522; --surface:#171F30; --fg:#E7EBF4; --muted:#9AA5BB; --line:#2B364D;
+  --accent:#8FB0FF; --accent-fg:#0F1522; --soft:#1E2A47; --ok:#5CCB93; --warn:#FF8A80; --warn-soft:#3A1E24; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1522; --surface:#171F30; --fg:#E7EBF4; --muted:#9AA5BB; --line:#2B364D;
+  --accent:#8FB0FF; --accent-fg:#0F1522; --soft:#1E2A47; --ok:#5CCB93; --warn:#FF8A80; --warn-soft:#3A1E24; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:15px;line-height:1.6;
+  padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:18px;min-width:0}
+h1,h2,h3{font-family:var(--font-head);text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:30px;letter-spacing:-.01em}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.lead{color:var(--muted);margin:6px 0 0}
+.steps{display:flex;gap:8px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.steps span{background:var(--soft);color:var(--accent);padding:4px 10px;border-radius:999px;font-weight:600}
+.clause{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px;min-width:0}
+.clause h2{font-size:17px;margin-bottom:8px;display:flex;gap:10px;align-items:baseline}
+.clause h2 b{color:var(--accent);font-variant-numeric:tabular-nums}
+.clause ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.clause li{display:grid;grid-template-columns:34px 1fr;gap:6px}
+.clause li i{font-style:normal;color:var(--muted);font-variant-numeric:tabular-nums;font-size:13px;padding-top:2px}
+.addendum{border-style:dashed}
+.tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:1px 7px}
+.note{font-size:13px;color:var(--muted)}
+.sign{background:var(--surface);border:2px solid var(--accent);border-radius:12px;padding:20px 18px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.sign h2{font-size:22px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:25px}}
+label.f{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;min-width:0}
+label.f small{font-weight:400;color:var(--muted)}
+input[type=text],select{font:inherit;font-size:15px;padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);min-width:0;width:100%}
+input[type=text]:focus,select:focus,button:focus-visible,input[type=checkbox]:focus-visible,input[type=radio]:focus-visible,textarea:focus{outline:2px solid var(--accent);outline-offset:2px}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:0;padding:12px 14px;min-width:0}
+legend{font-size:13px;font-weight:700;padding:0 6px}
+.chk{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:start;padding:5px 0;font-size:14px}
+.chk input{margin-top:4px;width:17px;height:17px;accent-color:var(--accent)}
+.radios{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.radios label{display:flex;gap:6px;align-items:center}
+.span2{grid-column:1/-1}
+.card{border:1.5px solid var(--fg);border-radius:10px;padding:18px;background:var(--surface);display:flex;flex-direction:column;gap:12px;min-width:0}
+.card .top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:10px}
+.card .top h3{font-size:17px}
+.stamp{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:6px;border:1.5px solid var(--warn);color:var(--warn)}
+.stamp.done{border-color:var(--ok);color:var(--ok)}
+.kv{display:grid;grid-template-columns:150px 1fr;gap:4px 12px;font-size:14px;margin:0}
+@media (max-width:560px){.kv{grid-template-columns:1fr}.kv dt{margin-top:6px}}
+.kv dt{color:var(--muted);font-weight:600}
+.kv dd{margin:0;word-break:break-word}
+.sigline{font-family:var(--font-head);font-size:24px;border-bottom:1.5px solid var(--fg);padding:2px 0 2px;min-height:38px;word-break:break-word}
+.decl{font-size:13px;color:var(--muted)}
+.ticks{display:flex;flex-direction:column;gap:2px;font-size:13px}
+.ticks div.on::before{content:"[x] ";color:var(--ok);font-weight:700}
+.ticks div.off::before{content:"[ ] ";color:var(--warn);font-weight:700}
+.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+button.primary{font:inherit;font-weight:700;padding:11px 18px;border:0;border-radius:8px;background:var(--accent);color:var(--accent-fg);cursor:pointer}
+button.primary:disabled{opacity:.45;cursor:not-allowed}
+.status{font-size:13px;font-weight:600}
+.status.ok{color:var(--ok)}
+.status.bad{color:var(--warn)}
+.missing{background:var(--warn-soft);color:var(--warn);border-radius:8px;padding:9px 12px;font-size:13px}
+textarea{width:100%;min-height:210px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;line-height:1.5;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);resize:vertical}
+.how{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.how{grid-template-columns:1fr}}
+.how div{background:var(--soft);border-radius:8px;padding:10px 12px;font-size:13px}
+.how b{display:block;margin-bottom:2px;color:var(--accent)}
+@media (prefers-reduced-motion:no-preference){button.primary{transition:opacity .15s}}
+.roles{display:grid;gap:8px}
+.rp{display:flex;align-items:center;gap:8px;flex-wrap:wrap;text-align:left;font:inherit;font-size:14px;background:var(--bg);color:var(--fg);border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer}
+.rp.on{border-color:var(--accent);background:var(--soft);box-shadow:0 0 0 1px var(--accent)}
+.rp b{min-width:62px;font-family:var(--font-head)}
+.chip{padding:2px 9px;border-radius:5px;font-size:13px;font-weight:600;color:var(--c);background:color-mix(in srgb,var(--c) 16%,transparent);border:1px solid color-mix(in srgb,var(--c) 40%,transparent)}
+
+.roles{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.rp b{min-width:58px;font-size:13px;color:var(--muted)}
+:root{--bg:#EEF1F8;--surface:#FFFFFF;--fg:#141A2C;--muted:#5B657C;--line:#DCE1EE;--accent:#4B54D6;--accent-fg:#fff;--soft:#ECEEFF;--shadow:0 6px 22px rgba(30,40,90,.08)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0A0E19;--surface:#121829;--fg:#E8ECF7;--muted:#98A3BD;--line:#232D47;--accent:#8B97FF;--accent-fg:#0A0E19;--soft:#1A2244;--shadow:0 6px 22px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--bg:#0A0E19;--surface:#121829;--fg:#E8ECF7;--muted:#98A3BD;--line:#232D47;--accent:#8B97FF;--accent-fg:#0A0E19;--soft:#1A2244;--shadow:0 6px 22px rgba(0,0,0,.35)}
+body{background:radial-gradient(900px 380px at 50% -80px,rgba(75,84,214,.18),transparent),var(--bg)}
+header{background:linear-gradient(135deg,#141c36,#2d3f8f);color:#fff;border-radius:16px;padding:26px 24px;border-bottom:4px solid #F5B83D;box-shadow:var(--shadow)}
+header .eyebrow{color:#F5B83D}header .lead{color:#d5dcf6}
+.clause{box-shadow:var(--shadow);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px}
+.clause h2{font-size:18px}.clause li{font-size:14.5px}
+.steps span{background:var(--surface);border:1px solid var(--line);color:var(--fg)}
+.sign{border:1px solid var(--line);border-top:5px solid var(--accent);border-radius:16px;box-shadow:var(--shadow);padding:24px 20px}
+input[type=text],select{background:var(--surface);border-radius:10px;padding:11px 12px}
+fieldset{border-radius:12px}
+button.primary,button.sec{border-radius:10px;padding:12px 18px}
+button.primary{box-shadow:0 4px 12px rgba(75,84,214,.35)}
+.how div{border-left:3px solid var(--accent)}
+.ar{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13px;margin-top:8px}
+.ar small{color:var(--muted)}.ar button{font:inherit;font-size:12px;font-weight:700;padding:5px 10px;border-radius:8px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+#cv{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;display:block;background:#fff}
+button.sec{font:inherit;font-weight:600;padding:10px 16px;border:1.5px solid var(--accent);border-radius:8px;background:transparent;color:var(--accent);cursor:pointer}
+button.sec:disabled{opacity:.45;cursor:not-allowed}
+
+/* ===== Nexus RP professional light theme ===== */
+:root,:root:not([data-theme="light"]),:root[data-theme="dark"]{
+  --bg:#F6F4EE;--surface:#FFFFFF;--fg:#15181F;--muted:#667085;--line:#E4E1D6;
+  --accent:#B8891A;--accent-fg:#FFFFFF;--soft:#FBF4DF;--ink:#0E1016;--gold:#E0B12B;
+  --ok:#1F7A4D;--warn:#B3261E;--warn-soft:#FCEBE9;--shadow:0 1px 2px rgba(20,24,31,.05),0 8px 24px rgba(20,24,31,.06);
+  --font-head:'Inter',system-ui,sans-serif;--font-body:'Inter',system-ui,sans-serif;--font-doc:'Inter',system-ui,sans-serif;color-scheme:light}
+body{background:var(--bg)!important;color:var(--fg)}
+header.hd{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:14px;padding:22px 24px;box-shadow:var(--shadow);color:var(--fg)}
+header.hd .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.18em}
+header.hd h1{font-family:var(--font-head);font-size:28px;font-weight:700;color:var(--ink);letter-spacing:0}
+header.hd .lead{color:var(--muted);font-size:14px;font-family:var(--font-body)}
+.hd .tx{flex:1;min-width:220px}
+.agchip{display:inline-flex;gap:8px;align-items:center;margin-top:10px;font-size:12px;font-weight:600;color:var(--muted);border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:5px 10px}
+.agchip b{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--ink);font-size:13px;letter-spacing:.03em}
+.lg{width:96px;height:96px;border-radius:18px;background:#0B0B0D;display:grid;place-content:center;text-align:center;border:2px solid #F5C518;box-shadow:0 0 0 4px #fff,0 0 0 5px var(--line),0 8px 20px rgba(0,0,0,.18);flex:none;overflow:hidden}
+.lg b{font:800 21px/1 Inter,sans-serif;color:#fff;text-shadow:0 0 10px rgba(245,197,24,.95)}
+.lg i{font:800 17px/1.15 Inter,sans-serif;font-style:normal;color:#fff;text-shadow:0 0 8px rgba(245,197,24,.95)}
+.lg img{width:100%;height:100%;object-fit:cover;display:block}
+.steps{gap:6px}
+.steps span{background:var(--surface);border:1px solid var(--line);color:var(--muted);font-weight:600;font-size:12.5px;padding:5px 12px}
+.clause{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:12px;box-shadow:var(--shadow);padding:18px 22px}
+.clause h2{font-family:var(--font-head);font-size:17px;font-weight:700;color:var(--ink);align-items:center;gap:12px;margin-bottom:12px}
+.clause h2 b{display:inline-grid;place-content:center;min-width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--gold);font:700 14px Inter,sans-serif}
+.clause li{font-family:var(--font-body);font-size:14.5px;line-height:1.6;color:#232833;grid-template-columns:42px 1fr}
+.clause li i{font-family:var(--font-body);font-weight:600;color:var(--accent);font-size:12.5px;padding-top:5px}
+.addendum{border-style:solid;border-left-color:var(--ink)}
+.tag{background:var(--soft);color:var(--accent);border-color:#EBD9A0}
+.sign{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:14px;box-shadow:var(--shadow);padding:26px 24px}
+.sign h2{font-family:var(--font-head);font-size:22px;color:var(--ink)}
+input[type=text],select{background:#FBFAF6;border:1px solid #D8D4C4;border-radius:10px;padding:11px 13px}
+input[type=text]:focus,select:focus{border-color:var(--gold);outline:2px solid rgba(224,177,43,.35);outline-offset:0}
+fieldset{border:1px solid var(--line);border-radius:12px;background:#FDFCF9}
+legend{font-family:var(--font-body);color:var(--ink)}
+.chk input,.radios input{accent-color:var(--ink)}
+.rp{background:#FBFAF6;border:1px solid #DCD8C8;border-radius:10px}
+.rp:hover{border-color:var(--gold)}
+.rp.on{background:var(--soft);border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+button.primary,button.sec{font-family:var(--font-body);font-size:14px;font-weight:600;letter-spacing:.01em;border-radius:10px;padding:11px 20px;cursor:pointer;transition:background .15s,border-color .15s,box-shadow .15s}
+button.primary{background:var(--ink);color:#fff;border:1px solid var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.15)}
+button.primary:hover:not(:disabled){background:#23283A;box-shadow:0 4px 14px rgba(14,16,22,.25)}
+button.sec{background:#fff;color:var(--ink);border:1px solid #CFCAB6;box-shadow:none}
+button.sec:hover:not(:disabled){border-color:var(--gold);background:var(--soft)}
+button.primary:disabled,button.sec:disabled{opacity:.4;cursor:not-allowed}
+.how div{background:var(--soft);border-left:3px solid var(--gold);color:#3A3F4B}
+.how b{color:var(--accent)}
+.ar button{border-color:#CFCAB6;color:var(--ink);background:#fff}
+#cv{border:1px solid var(--line);box-shadow:var(--shadow)}
+textarea{background:#FBFAF6}
+.missing{background:#FFF6E0;color:#8A5A00;border:1px solid #F0DCA0}
+</style>
+
+<div class="wrap">
+  <header class="hd">
+    <div class="lg" id="lgbox"><b>NEXUS</b><i>RP</i></div>
+    <div class="tx">
+      <div class="eyebrow">Nexus Roleplay</div>
+      <h1>Admin Team Agreement</h1>
+      <p class="lead">Rules and code of conduct for everyone in the administration team, from Level 1 to the Curator of Project. Signed with your real details, it can be used as proof if the rules on leaks or harm to the server are broken.</p>
+      <div class="agchip">Agreement no. <b id="agno"></b></div>
+    </div>
+  </header>
+  <div class="steps"><span>1 Read the clauses</span><span>2 Fill in your details</span><span>3 Download your signed copy</span><span>4 Post it in the staff channel</span></div>
+
+  <div id="clauses" class="wrap" style="gap:12px"></div>
+
+  <section class="sign" id="sign" aria-labelledby="signTitle">
+    <div>
+      <h2 id="signTitle">Sign here</h2>
+      <p class="note" style="margin:4px 0 0">Fill in the form. The card and the text below update as you type. When it says Ready to sign, copy the text or screenshot the card and post it in the staff channel before the deadline: <b id="dl"></b></p>
+    </div>
+
+    <div class="grid">
+      <label class="f span2" for="name">Full name (as you want it recorded) <input type="text" id="name" autocomplete="off" placeholder="e.g. Rahul Sharma"></label>
+      <label class="f" for="ign">In-game name and ID <input type="text" id="ign" autocomplete="off" placeholder="e.g. John Miller / ID 1234"></label>
+      <label class="f" for="disc">Discord username and ID <input type="text" id="disc" autocomplete="off" placeholder="e.g. rahul#0001 / 123456789012345678"></label>
+      <div class="span2" style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600"><span>Your role and level <small style="font-weight:400;color:var(--muted)">(tap your rank)</small></span><input type="hidden" id="role"><div class="roles" id="roles" role="radiogroup" aria-label="Role and level"></div></div>
+      <div class="span2" id="gbar" hidden><div class="row"><button class="sec" id="gbtn" type="button">Sign in with Google</button><span class="note" id="gst">Sign in with your Gmail to verify it. One Gmail can sign only once, and only approved Gmails are accepted.</span></div></div>
+      <div class="missing span2" id="warn" hidden>Duplicate protection is not enabled on this link. Anyone with the link could sign for someone else.</div>
+      <label class="f span2" for="email">Email address <small>Filled automatically after Google sign-in</small><input type="text" id="email" autocomplete="off" inputmode="email" placeholder="e.g. rahul@gmail.com"></label>
+      <label class="f" for="date">Date <input type="text" id="date" autocomplete="off"></label>
+    </div>
+
+    <fieldset>
+      <legend>PC Checker addendum (Addendum A)</legend>
+      <div class="radios" role="radiogroup">
+        <label><input type="radio" name="pcc" value="Not applicable" checked> Not applicable</label>
+        <label><input type="radio" name="pcc" value="Yes, I accept the PC Checker addendum"> I am a PC Checker and accept it</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>I confirm that</legend>
+      <div id="checks"></div>
+    </fieldset>
+
+    <label class="f" for="sig">Signature (type your full name again) <input type="text" id="sig" autocomplete="off" placeholder="Type your full name"></label>
+
+    <div id="missing" class="missing" hidden></div>
+
+    <div>
+      <div class="eyebrow" style="margin-bottom:8px">Your signed copy (live preview)</div>
+      <canvas id="cv" width="1200" height="1600" aria-label="Signed agreement copy"></canvas>
+      <div class="actions" style="margin-top:12px">
+        <button class="primary" id="submit" type="button" disabled hidden>Submit signed agreement</button>
+        <button class="primary" id="dlimg" type="button" disabled>Download signed copy (PNG)</button>
+        <button class="sec" id="cpimg" type="button" disabled>Copy image</button>
+        <button class="sec" id="copy" type="button" disabled>Copy Discord text</button>
+        <button class="sec" id="send" type="button" disabled hidden>Send to Discord</button>
+        <span class="status" id="status"></span>
+      </div>
+    </div>
+    <textarea id="out" readonly aria-label="Text to paste into Discord" style="min-height:150px"></textarea>
+    <div class="how">
+      <div><b>Posting the image</b>Download the signed copy (or press Copy image) and post it in the staff channel with the text. Your name, IDs and email are highlighted on it.</div>
+      <div><b>Proof is kept</b>The Curator of Project stores your signed copy with your Discord ID and email as proof of acceptance.</div>
+    </div>
+    <p class="note" style="margin:0">Your signature counts once the signed copy is posted in the staff channel before the deadline. Enforceability of any legal action depends on local law; management may ask for extra proof. The Curator of Project follows this agreement too.</p>
+  </section>
+<section class="sign" id="appr" hidden><h2>Owner dashboard</h2>
+  <p class="note" style="margin:0">Only higher-ups listed in APPROVERS can see this. Everything here is private.</p>
+  <div class="grid" id="stats"></div>
+  <div class="row"><button class="sec tb" data-t="slist">Signed list</button><button class="sec tb" data-t="nlist">Not signed yet</button><button class="sec tb" data-t="llog">Activity log</button><button class="sec tb" data-t="alist">Allowed Gmails</button><button class="sec" id="csv" type="button">Export CSV</button><button class="sec" id="rl" type="button">Refresh</button></div>
+  <div id="slist"><input type="text" id="sq" placeholder="Search name, Gmail, ID, Discord, ref..." style="margin-bottom:6px"><div id="srows"></div></div>
+  <div id="nlist" hidden></div><div id="llog" hidden></div>
+  <div id="alist" hidden><div class="row" style="margin-bottom:6px"><input type="text" id="aemail" placeholder="admin@gmail.com" style="flex:1;min-width:200px"><input type="text" id="anote" placeholder="Name / role (note)" style="flex:1;min-width:160px"><button class="sec" id="aadd" type="button">Add to allowed list</button></div><div id="arows"></div></div>
+</section>
+</div>
+
+<script>
+/* Curator: change these two values before you share the link. */
+var CURATOR = "Curator of Project";
+var DEADLINE = "(21 Nov 2026)";
+/* Optional: paste a Discord channel webhook URL to enable one-tap sending of the signed copy. Anyone with the link can see it, so use a private staff-only channel. */
+var WEBHOOK = "";
+/* Nexus RP logo (embedded). To change it, replace this value with a file name like "logo.png" or another data URL. */
+var LOGO_URL = "data:image/jpeg;base64,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";
+/* Duplicate and fake-sign protection (needs a free Firebase project, see SETUP-Firebase.txt).
+   Paste the Firebase web config object here, e.g. {apiKey:"...",authDomain:"...",projectId:"..."}. Leave null to run without protection. */
+var FIREBASE = {
+  apiKey: "AIzaSyD1l6ewr_LicDRVT2Pns_qG8iTjChIHbjs",
+  authDomain: "nexusadminagreement.firebaseapp.com",
+  projectId: "nexusadminagreement",
+  storageBucket: "nexusadminagreement.firebasestorage.app",
+  messagingSenderId: "62924597614",
+  appId: "1:62924597614:web:2ea470bc3c26a881d9797f"
+};
+var APPROVERS = ["adityasalgude05@gmail.com"];
+
+var CLAUSES = [
+ ["My role",[
+  "I accept my role in the Nexus Roleplay administration team and I understand that it is a position of trust.",
+  "I will read and follow the Server Rules, the Forum Handling Format Guide and any guide I am given.",
+  "I understand that an admin is the face of the server, in the game, on the forum and on Discord."]],
+ ["Chain of command",[
+  "I will always report to the level directly above me. If my senior can not solve a problem, it goes one level higher.",
+  "I will not skip levels without a good reason, and I will not take team problems to players or public channels.",
+  "I will follow instructions from higher levels if they are within the rules. If an order looks wrong, I will say so politely and privately.",
+  "Complaints against an admin go to the Chief Administrator. I will not argue with players about my decisions."]],
+ ["Confidentiality: no leaks",[
+  "Everything inside the admin team is confidential: internal guides, case files, evidence, staff chats and meetings, reporter details, and planned actions.",
+  "I will not share, screenshot, copy or talk about any of it with players, friends, family, other servers or in public.",
+  "I will not tell anyone the result of a report before it is officially posted, and I will not warn anyone about raids, checks or inspections.",
+  "I will not let anyone use my admin account or see my admin panels. I am responsible for my account.",
+  "If I see or hear about a leak, I will report it privately to my senior or the Curator of Project."]],
+ ["Fairness: no favouritism",[
+  "I will treat everyone equally. Friend or stranger, the same rule and the same punishment.",
+  "I will not handle a report where I, a friend, a family member or my faction mate is involved. I will pass it to another admin.",
+  "I will decide only after watching the full evidence with sound. I will never decide from one side's story.",
+  "I will not punish out of anger, a personal problem or an old argument."]],
+ ["Doing the work properly",[
+  "I will punish only with a written rule and I will always name the rule number. If a punishment is not listed, I will ask a senior first.",
+  "I will use the official forum format and center-align my replies. I will post 'Reviewing' first, work the oldest threads first, and finish with Reply, Lock (with reason) and Prefix.",
+  "I will use Pending only for red or yellow circle events that need more POV (6 to 12 hours). Otherwise I will Reject with the correct reason.",
+  "I will add the closing line about the Complaint Against Administration."]],
+ ["What I will not do",[
+  "I will not use admin commands or powers for my own benefit, for fun, for revenge or to help a friend.",
+  "I will not take or give money, items, vehicles, houses or favours, and I will not accept anything to change a decision.",
+  "I will not use admin knowledge when I play as a normal player (no Metagaming).",
+  "I will not insult, mock, provoke or humiliate any player or staff member.",
+  "I will not share my account, play or work for other GTA RP projects without permission, or take sides between factions.",
+  "I will not hide my mistakes. If I make a wrong decision, I will tell my senior quickly so it can be fixed."]],
+ ["Behaviour on Discord and in the game",[
+  "I will be polite and professional in every channel, voice room and in-game chat. Staff matters stay in staff channels.",
+  "I will not argue with players in public. I will politely point them to the Complaint Against Administration.",
+  "I will keep my admin duty status clear. When I am on duty I act as an admin; when I play, I play as a normal player.",
+  "I will not interrupt live RP unless a rule is clearly broken or a player needs help.",
+  "I will follow the same rules I enforce. Staff are not above the rules."]],
+ ["Activity and announcements",[
+  "I will be active as required: answer reports quickly, walk around the game, and tell my senior before I go on leave.",
+  "I will read every official announcement and follow it. 'I did not see it' is not an excuse.",
+  "I will close what I start and leave a short note if something is still open."]],
+ ["Accountability and consequences",[
+  "My decisions can be reviewed. If a complaint is filed, it will be checked fairly. If I followed the rules and the format, I have nothing to fear.",
+  "If I break this agreement, the action depends on how serious it is: verbal warning, written warning, suspension or demotion, or removal from the admin team.",
+  "A confirmed leak, abuse of power, corruption, or serious favouritism can lead to immediate removal.",
+  "The decision is taken by the Curator of Project, with higher management when needed. I may appeal to the Staff Manager.",
+  "The Curator of Project follows this agreement too. If the Curator breaks it, the same consequences apply, including leaving the admin team, and the case is reviewed by the Staff Manager or Project Manager."]],
+ ["Legal action and proof",[
+  "If I leak confidential information, or try to harm the server, its community, staff, data or finances, the owners may take legal action against me, as far as the law of the place allows.",
+  "Harm includes leaking or selling data, sabotage, deleting or changing files, misusing access, spreading false claims about the server, and helping others to attack it.",
+  "This applies during my time in the team and also after I step down or am removed. My duty of confidentiality does not end when I leave.",
+  "To make this agreement trustworthy I give my true full name, Discord username and ID, in-game name and ID, a working email and my signature. False details are a breach of this agreement.",
+  "I agree that my signed copy (image with signature, highlighted name, IDs, email, date and reference code) is kept by the Curator of Project and management as proof of my acceptance and may be used as evidence in any dispute or legal action.",
+  "Management will keep my Discord ID and email private and use them only for this purpose."]],
+ ["Leaving the team",[
+  "If I want to leave, I will inform my senior in advance. When I leave or am removed, I will not share any confidential information and I will not use admin knowledge against the server."]]
+];
+var ADD = ["I will check only for cheats and unfair software, only when authorised, and with the player's agreement as per the server procedure.",
+  "I will not open, copy, record or share personal files, accounts, photos, chats or passwords.",
+  "I will follow the official check procedure step by step and keep the evidence as instructed.",
+  "I will report the result only to my senior or the Curator of Project. I will not announce it publicly or to friends.",
+  "I will be polite and calm. A player is innocent until the check shows otherwise.",
+  "Any misuse of access or any leak means immediate removal from PC Checker duty and from the admin team.",
+  "The full PC Checker rules explained in the meeting form part of this addendum."];
+var ROLES = [
+ {lv:11,n:"Project Manager",c:"#d6453d"},{lv:11,n:"Developer",c:"#4aa3df"},
+ {lv:10,n:"Staff Manager",c:"#ef6a3a"},
+ {lv:9,n:"Curator Of Project",c:"#5b8def"},{lv:9,n:"Technical Administrator",c:"#3f6fd6"},
+ {lv:8,n:"Chief Administrator",c:"#2ecc9a"},{lv:7,n:"Deputy Chief Administrator",c:"#8a9a5b"},
+ {lv:6,n:"Curator Administrator",c:"#e09a4e"},{lv:5,n:"Senior Admin",c:"#a23be0"},
+ {lv:4,n:"Community Manager",c:"#8d8fe8"},{lv:3,n:"Server Admin",c:"#3fa8d8"},
+ {lv:2,n:"Junior Admin",c:"#3fa8d8"},{lv:1,n:"Administrator Assistant",c:"#2ecc9a"}];
+ROLES.forEach(function(r){r.v="Level "+r.lv+" - "+r.n});
+var CHECKS = [
+ ["c1","I have read the whole Admin Team Agreement and I understand it."],
+ ["c2","I will follow the chain of command."],
+ ["c3","I will keep everything confidential and will never leak."],
+ ["c4","I will not show favouritism to anyone."],
+ ["c5","I will read and follow all official announcements."],
+ ["c6","I accept the consequences if I break this agreement."],
+ ["c7","I understand that leaks or harm to the server, during or after my time in the team, can lead to legal action."],
+ ["c8","My name, IDs and email are true, and I agree that this signed copy is kept as proof and may be used as evidence."]];
+
+function $(id){return document.getElementById(id)}
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+// render clauses
+(function(){
+  var h="";
+  CLAUSES.forEach(function(c,i){
+    var n=i+1;
+    h+='<section class="clause"><h2><b>'+n+'</b>'+esc(c[0])+'</h2><ol>';
+    c[1].forEach(function(t,k){h+='<li><i>'+n+'.'+(k+1)+'</i><span>'+esc(t)+'</span></li>'});
+    h+='</ol></section>';
+  });
+  h+='<section class="clause addendum"><h2><b>A</b>Addendum for PC Checkers <span class="tag">Only if selected</span></h2><ol>';
+  ADD.forEach(function(t,k){h+='<li><i>A.'+(k+1)+'</i><span>'+esc(t)+'</span></li>'});
+  h+='</ol></section>';
+  $("clauses").innerHTML=h;
+  buildRoles();
+  var ck="";CHECKS.forEach(function(c){ck+='<label class="chk"><input type="checkbox" id="'+c[0]+'"><span>'+esc(c[1])+'</span></label>'});
+  $("checks").innerHTML=ck;
+  var d=new Date();var m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  $("date").value=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();
+})();
+
+var signedAt="",stampText="INCOMPLETE",fdb=null,fuser=null,registered=false,regSnap="",isAppr=false;
+function buildRoles(){
+  var h="";ROLES.forEach(function(r,i){h+='<button type="button" class="rp" role="radio" aria-checked="false" data-i="'+i+'"><b>Level '+r.lv+'</b><span class="chip" style="--c:'+r.c+'">'+esc(r.n)+'</span></button>'});
+  $("roles").innerHTML=h;
+  $("roles").addEventListener("click",function(e){var b=e.target.closest(".rp");if(!b)return;
+    $("role").value=ROLES[b.dataset.i].v;
+    [].forEach.call(document.querySelectorAll(".rp"),function(x){var on=x===b;x.classList.toggle("on",on);x.setAttribute("aria-checked",on)});
+    update()});
+}
+function val(id){return $(id).value.trim()}
+function pcc(){var r=document.querySelector('input[name=pcc]:checked');return r?r.value:"Not applicable"}
+var DECL="I have read this agreement fully. I understand it and I accept it. I understand that if I break it, I can receive the consequences written in the agreement, and that the same rules apply to every member of the team, including the Curator of Project.";
+var LEGAL="LEGAL NOTICE: Leaking confidential information or harming the server, during or after my time in the team, can lead to legal action. This signed copy, with my signature, name, IDs and email, is kept as proof of acceptance and may be used as evidence.";
+var AGSUF="";
+function refCode(){
+  if(!AGSUF){try{AGSUF=localStorage.getItem("nx_sfx")||""}catch(e){}
+    if(!AGSUF){var a=new Uint32Array(1);crypto.getRandomValues(a);AGSUF=a[0].toString(36).toUpperCase().padStart(5,"0").slice(0,5);try{localStorage.setItem("nx_sfx",AGSUF)}catch(e){}}}
+  var nm=val("name").toUpperCase().replace(/[^A-Z0-9 ]/g,"").trim().split(/\s+/).filter(Boolean).join("").slice(0,12)||"NAME";
+  var m=val("ign").match(/\d+/),id=m?m[0].slice(0,8):(val("ign").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,6)||"ID");
+  return "NX-"+nm+"-"+id+"-"+AGSUF}
+function wrap(c,t,w){var ws=t.split(" "),l=[],cur="";ws.forEach(function(x){var n=cur?cur+" "+x:x;if(c.measureText(n).width>w&&cur){l.push(cur);cur=x}else cur=n});if(cur)l.push(cur);return l}
+
+var logoImg=null;
+function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()}
+function drawLogo(c,x,y,s){
+  var r=s*.18;c.save();c.fillStyle="#0B0B0D";rr(c,x,y,s,s,r);c.fill();
+  if(logoImg&&logoImg.complete&&logoImg.naturalWidth){c.save();rr(c,x,y,s,s,r);c.clip();c.drawImage(logoImg,x,y,s,s);c.restore()}
+  else{c.textAlign="center";c.shadowColor="rgba(245,197,24,.95)";c.shadowBlur=s*.12;c.fillStyle="#fff";
+    c.font="800 "+(s*.22)+"px Inter,sans-serif";c.fillText("NEXUS",x+s/2,y+s*.53);
+    c.font="800 "+(s*.19)+"px Inter,sans-serif";c.fillText("RP",x+s/2,y+s*.76)}
+  c.restore();c.save();c.strokeStyle="#F5C518";c.lineWidth=Math.max(2,s*.03);rr(c,x,y,s,s,r);c.stroke();c.restore()}
+function ornBorder(c,W,H){
+  var o=16,b=40;c.save();
+  c.fillStyle="#F3F1E8";c.fillRect(o,o,W-2*o,b);c.fillRect(o,H-o-b,W-2*o,b);c.fillRect(o,o+b,b,H-2*o-2*b);c.fillRect(W-o-b,o+b,b,H-2*o-2*b);
+  c.strokeStyle="#A9A38F";c.lineWidth=1.6;c.strokeRect(o,o,W-2*o,H-2*o);c.strokeRect(o+b,o+b,W-2*o-2*b,H-2*o-2*b);
+  c.strokeStyle="#B7B19C";c.lineWidth=1.2;
+  function ro(x,y){c.beginPath();c.arc(x,y,7.5,0,6.2832);c.stroke();c.beginPath();c.arc(x,y,2.6,0,6.2832);c.stroke()}
+  for(var x=o+b+10;x<W-o-b;x+=20){ro(x,o+b/2);ro(x,H-o-b/2)}
+  for(var y=o+b+10;y<H-o-b;y+=20){ro(o+b/2,y);ro(W-o-b/2,y)}
+  [[o,o],[W-o-b,o],[o,H-o-b],[W-o-b,H-o-b]].forEach(function(p){var cx=p[0]+b/2,cy=p[1]+b/2;
+    c.fillStyle="#F3F1E8";c.fillRect(p[0],p[1],b,b);c.strokeStyle="#A9A38F";c.lineWidth=1.4;c.strokeRect(p[0],p[1],b,b);
+    [16,11,6,2.5].forEach(function(r){c.beginPath();c.arc(cx,cy,r,0,6.2832);c.stroke()})});
+  c.restore()}
+function fprint(c,x,y,n,cell,seed){
+  var h=7;for(var i=0;i<seed.length;i++)h=(h*31+seed.charCodeAt(i))>>>0;
+  c.fillStyle="#15181F";
+  for(var r=0;r<n;r++)for(var q=0;q<n;q++){h=(h*1664525+1013904223)>>>0;if((h>>>24)%2)c.fillRect(x+q*cell,y+r*cell,cell,cell)}}
+var NOTICE=["This signed copy is valid only when it is posted in the staff channel before the deadline.",
+  "The agreement number is built from the signatory's name and in-game ID and belongs to this copy only.",
+  "False details in this copy are a breach of the agreement and can lead to removal and legal action."];
+function paint(c,W,H,ready){
+  var P=118,F="Inter,system-ui,sans-serif",MF="ui-monospace,Menlo,Consolas,monospace";
+  c.clearRect(0,0,W,H);c.fillStyle="#FFFEFA";c.fillRect(0,0,W,H);c.textAlign="left";
+  var wm=[val("name"),val("disc"),val("ign"),val("email")].filter(Boolean).join("  •  ").toUpperCase()||"NEXUS ROLEPLAY  •  ADMIN TEAM AGREEMENT";
+  c.save();c.beginPath();c.rect(58,58,W-116,H-116);c.clip();c.rotate(-0.3);c.font="600 17px "+F;var tw=c.measureText(wm).width+120,k=0;
+  for(var yy=0;yy<H+500;yy+=170,k++)for(var xx=-0.3*H-tw+(k%2)*tw/2;xx<W;xx+=tw){c.fillStyle="rgba(255,214,0,.16)";c.fillRect(xx-8,yy-22,tw-104,32);c.fillStyle="rgba(39,71,140,.16)";c.fillText(wm,xx,yy)}
+  c.restore();
+  ornBorder(c,W,H);
+  /* header */
+  drawLogo(c,P,96,120);
+  c.fillStyle="#B8891A";c.font="700 15px "+F;c.fillText("NEXUS ROLEPLAY",P+150,132);
+  c.fillStyle="#0E1016";c.font="700 40px "+F;c.fillText("Admin Team Agreement",P+150,180);
+  c.fillStyle="#667085";c.font="500 17px "+F;c.fillText("Signed copy  |  Code of conduct",P+150,212);
+  var st=stampText,col=st==="SIGNED"?"#1F7A4D":"#B3261E";c.font="700 15px "+F;var sw=c.measureText(st).width+32;
+  c.strokeStyle=col;c.lineWidth=2;rr(c,W-P-sw,100,sw,36,8);c.stroke();c.fillStyle=col;c.fillText(st,W-P-sw+16,124);
+  c.fillStyle="#0E1016";c.fillRect(P,246,W-2*P,3);c.fillStyle="#E0B12B";c.fillRect(P,252,W-2*P,2);
+  /* details */
+  var y=308,rows=[["Agreement No.",refCode(),0,1],["Issued on",val("date"),0,0],["Full name",val("name"),1,0],["In-game name / ID",val("ign"),1,0],["Discord username / ID",val("disc"),1,0],["Email",val("email"),1,0],["Role and level",val("role"),0,0],["PC Checker addendum",pcc(),0,0]];
+  rows.forEach(function(r){
+    c.font="700 16px "+F;c.fillStyle="#15181F";c.fillText(r[0],P,y);c.fillText(":",P+268,y);
+    c.font=(r[3]?"700 24px "+MF:"600 22px "+F);
+    if(r[1]){var w=c.measureText(r[1]).width;if(r[2]){c.fillStyle="rgba(255,221,51,.85)";c.fillRect(P+288,y-24,w+16,35)}c.fillStyle="#15181F";c.fillText(r[1],P+296,y)}
+    else{c.fillStyle="#B3261E";c.fillText("(not filled)",P+296,y)}
+    c.strokeStyle="#ECE9DD";c.lineWidth=1;c.beginPath();c.moveTo(P,y+16);c.lineTo(W-P,y+16);c.stroke();y+=46});
+  /* fingerprint + seal */
+  y+=20;var by=y;
+  c.fillStyle="#fff";c.fillRect(P,by,170,170);c.strokeStyle="#15181F";c.lineWidth=1.5;c.strokeRect(P,by,170,170);fprint(c,P+14,by+14,17,8,refCode());
+  c.fillStyle="#667085";c.font="600 14px "+F;c.fillText("Copy fingerprint",P,by+192);
+  var tx=P+206;c.fillStyle="#15181F";c.font="700 16px "+F;c.fillText("About this number",tx,by+30);
+  c.font="500 16px "+F;c.fillStyle="#3A3F4B";
+  wrap(c,"The agreement number is made from the signatory's name and in-game ID, with a short unique code. It identifies this signed copy. Keep it for reference.",W-P-tx-200).forEach(function(l,i){c.fillText(l,tx,by+58+i*25)});
+  var sx=W-P-78,sy=by+86;c.save();c.strokeStyle=col;c.lineWidth=3;c.beginPath();c.arc(sx,sy,76,0,6.2832);c.stroke();c.lineWidth=1.2;c.beginPath();c.arc(sx,sy,66,0,6.2832);c.stroke();
+  c.fillStyle=col;c.textAlign="center";c.font="800 22px "+F;c.fillText("NEXUS RP",sx,sy-2);c.font="700 14px "+F;c.fillText(st==="SIGNED"?"SIGNED COPY":"NOT FINAL",sx,sy+22);c.restore();c.textAlign="left";
+  y=by+232;
+  c.save();c.setLineDash([3,5]);c.strokeStyle="#8A8672";c.lineWidth=1.2;c.beginPath();c.moveTo(P,y);c.lineTo(W-P,y);c.stroke();c.restore();
+  c.fillStyle="#8A8672";c.font="500 13px "+F;c.textAlign="center";c.fillText("Please read and confirm below this line",W/2,y+22);c.textAlign="left";y+=70;
+  /* confirmations */
+  c.fillStyle="#B8891A";c.font="700 15px "+F;c.fillText("CONFIRMED",P,y);c.fillStyle="#E4E1D6";c.fillRect(P+120,y-5,W-2*P-120,1.5);y+=38;
+  CHECKS.forEach(function(ck){var on=$(ck[0]).checked;c.fillStyle=on?"#1F7A4D":"#B3261E";c.font="700 19px "+F;c.fillText(on?"✔":"✘",P,y);c.fillStyle="#232833";c.font="500 19px "+F;
+    wrap(c,ck[1],W-2*P-44).forEach(function(l){c.fillText(l,P+40,y);y+=29});y+=6});
+  y+=8;c.font="italic 500 17px "+F;c.fillStyle="#667085";wrap(c,DECL,W-2*P).forEach(function(l){c.fillText(l,P,y);y+=26});
+  y+=14;c.font="600 16px "+F;var ll=wrap(c,LEGAL,W-2*P-44),bh=ll.length*25+30;
+  c.fillStyle="rgba(179,38,30,.07)";c.fillRect(P,y,W-2*P,bh);c.fillStyle="#B3261E";c.fillRect(P,y,6,bh);
+  ll.forEach(function(l,n){c.fillText(l,P+24,y+31+n*25)});y+=bh+44;
+  /* signature */
+  c.fillStyle="#B8891A";c.font="700 15px "+F;c.fillText("SIGNATURE",P,y);y+=74;
+  c.fillStyle="#15181F";c.font="600 64px 'Dancing Script',cursive";c.fillText(val("sig"),P,y);
+  c.strokeStyle="#15181F";c.lineWidth=2;c.beginPath();c.moveTo(P,y+14);c.lineTo(W/2+80,y+14);c.stroke();
+  c.font="500 15px "+F;c.fillStyle="#667085";c.fillText((val("name")||"-")+(signedAt?"  |  Signed on "+signedAt:""),P,y+42);y+=92;
+  /* notice */
+  c.fillStyle="#15181F";c.font="700 13px "+F;c.fillText("NOTICE",P,y);y+=24;c.font="500 13.5px "+F;c.fillStyle="#5C6678";
+  NOTICE.forEach(function(t,i){wrap(c,(i+1)+". "+t,W-2*P).forEach(function(l){c.fillText(l,P,y);y+=21})});
+  y+=20;c.textAlign="center";c.fillStyle="#8A8672";c.font="500 13px "+F;c.fillText("Nexus Roleplay  |  Confidential proof copy kept by the Curator of Project and management  |  "+refCode(),W/2,y);c.textAlign="left";
+  return y+86}
+function draw(ready){
+  var cv=$("cv"),W=1200,h=paint(document.createElement("canvas").getContext("2d"),W,3000,ready);
+  cv.width=W;cv.height=h;paint(cv.getContext("2d"),W,h,ready)}
+
+function update(){
+  var miss=[];
+  if(!val("name"))miss.push("full name");
+  if(!val("ign"))miss.push("in-game name and ID");
+  if(!val("disc"))miss.push("Discord username and ID");
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(val("email")))miss.push("valid email");
+  if(!val("role"))miss.push("role and level");
+  if(!val("date"))miss.push("date");
+  var un=CHECKS.filter(function(c){return !$(c[0]).checked});
+  if(un.length)miss.push("all "+CHECKS.length+" confirmations ("+un.length+" left)");
+  if(!val("sig"))miss.push("signature");
+  else if(val("name")&&val("sig").toLowerCase()!==val("name").toLowerCase())miss.push("signature must match your full name");
+  if(FIREBASE&&!fuser)miss.unshift("Google sign-in");
+  var ready=miss.length===0;
+  if(registered&&regSnap!==snap())registered=false;
+  stampText=ready?((FIREBASE&&!registered)?"NOT SUBMITTED":"SIGNED"):"INCOMPLETE";
+  if(ready&&!signedAt)signedAt=new Date().toLocaleString("en-GB");if(!ready)signedAt="";
+  var mb=$("missing");mb.hidden=true;mb.textContent="";
+  var L=["## 📜 ADMIN TEAM AGREEMENT: SIGNED COPY","**Nexus Roleplay** • Ref `"+refCode()+"`","━━━━━━━━━━━━━━━━━━━━",
+   "> 👤 **Name:** "+(val("name")||"-"),"> 🎮 **In-game name / ID:** "+(val("ign")||"-"),"> 💬 **Discord:** "+(val("disc")||"-"),"> 📧 **Email:** "+(val("email")||"-"),
+   "> 🏷️ **Role / Level:** "+(val("role")||"-"),"> 🖥️ **PC Checker addendum:** "+pcc(),"> 📅 **Date:** "+(val("date")||"-"),"",
+   "**Confirmed:**"].concat(CHECKS.map(function(c){return ($(c[0]).checked?"✅ ":"⬜ ")+c[1]}));
+  L.push("","✍️ **Signature:** *"+(val("sig")||"-")+"*","🔒 *Signed copy image attached. Kept as proof; leaks or harm to the server, also after stepping down, can lead to legal action.*");
+  $("out").value=L.join("\n");$("agno").textContent=refCode();
+  var ok2=ready&&(!FIREBASE||registered);["copy","dlimg","cpimg","send"].forEach(function(i){$(i).disabled=!ok2});$("submit").hidden=!FIREBASE;$("submit").disabled=!ready||registered;
+  $("send").hidden=!WEBHOOK;if(!ready)$("status").textContent="";
+  draw(ready)}
+function say(t,ok){var s=$("status");s.className="status "+(ok?"ok":"bad");s.textContent=t}
+function blob(){return new Promise(function(r){$("cv").toBlob(r,"image/png")})}
+function fname(){return "Admin-Agreement-"+(val("name")||"signed").replace(/[^a-z0-9]+/gi,"-")+".png"}
+document.addEventListener("input",update);document.addEventListener("change",update);
+$("copy").addEventListener("click",function(){var t=$("out").value;
+  function fb(){var o=$("out");o.removeAttribute("readonly");o.focus();o.select();var ok=false;try{ok=document.execCommand("copy")}catch(e){}o.setAttribute("readonly","");say(ok?"Text copied.":"Select the text and copy it yourself.",ok)}
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(function(){say("Text copied. Paste it in the staff channel.",1)},fb);else fb()});
+$("dlimg").addEventListener("click",function(){blob().then(function(b){var a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=fname();document.body.appendChild(a);a.click();a.remove();say("Signed copy downloaded. Post it in the staff channel.",1)})});
+$("cpimg").addEventListener("click",function(){blob().then(function(b){return navigator.clipboard.write([new ClipboardItem({"image/png":b})])}).then(function(){say("Image copied. Paste it in Discord.",1)},function(){say("Could not copy the image here. Use Download instead.",0)})});
+$("send").addEventListener("click",function(){say("Sending...",1);blob().then(function(b){
+  var f=new FormData();f.append("payload_json",JSON.stringify({content:"**New signed Admin Team Agreement**",embeds:[{title:"📜 Admin Team Agreement: Signed Copy",color:2635916,description:"**Name:** "+val("name")+"\n**Role:** "+val("role")+"\n**Discord:** "+val("disc")+"\n**In-game:** "+val("ign")+"\n**Email:** "+val("email")+"\n**Date:** "+val("date"),image:{url:"attachment://copy.png"},footer:{text:"Ref "+refCode()+" • Nexus Roleplay"}}]}));
+  f.append("files[0]",b,"copy.png");return fetch(WEBHOOK,{method:"POST",body:f})}).then(function(r){say(r.ok?"Sent to Discord.":"Discord refused it. Download and post manually.",r.ok)},function(){say("Could not send. Download and post manually.",0)})});
+$("dl").textContent=DEADLINE;
+function snap(){return [val("name"),val("ign"),val("disc"),val("email"),val("role"),val("date"),val("sig")].join("|")}
+function norm(t){return t.toLowerCase().replace(/[^a-z0-9]/g,"")}
+function sha(t){return crypto.subtle.digest("SHA-256",new TextEncoder().encode(t)).then(function(b){return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,"0")}).join("").slice(0,40)})}
+function claimList(){var a=[["e",val("email").toLowerCase()],["n",norm(val("name"))],["g",norm(val("ign"))]],gi=val("ign").match(/\d+/),dd=val("disc").match(/\d{15,}/);
+  if(gi)a.push(["gi",gi[0]]);a.push(["d",dd?dd[0]:norm(val("disc"))]);return a}
+function loadScript(u){return new Promise(function(r,j){var e=document.createElement("script");e.src=u;e.onload=r;e.onerror=j;document.head.appendChild(e)})}
+function initFB(){
+  if(!FIREBASE){$("warn").hidden=false;return}
+  $("gbar").hidden=false;$("email").readOnly=true;
+  var B="https://www.gstatic.com/firebasejs/10.12.2/";
+  loadScript(B+"firebase-app-compat.js").then(function(){return Promise.all([loadScript(B+"firebase-auth-compat.js"),loadScript(B+"firebase-firestore-compat.js")])}).then(function(){
+    firebase.initializeApp(FIREBASE);fdb=firebase.firestore();firebase.auth().onAuthStateChanged(onUser)},function(){say("Could not load Firebase. Check your connection.",0)})}
+function onUser(u){
+  fuser=u;registered=false;
+  if(u){$("email").value=u.email.toLowerCase();$("gst").textContent="Signed in as "+u.email+" (tap to switch)";$("gbtn").textContent="Switch Gmail"}
+  else{$("email").value="";$("gst").textContent="Sign in with your Gmail to verify it. One Gmail can sign only once, and only approved Gmails are accepted.";$("gbtn").textContent="Sign in with Google"}
+  isAppr=!!u&&APPROVERS.indexOf(u.email.toLowerCase())>-1;$("appr").hidden=!isAppr;if(isAppr)loadAppr();update()}
+$("gbtn").addEventListener("click",function(){
+  var a=firebase.auth();(a.currentUser?a.signOut():Promise.resolve()).then(function(){return a.signInWithPopup(new firebase.auth.GoogleAuthProvider())}).catch(function(e){say("Sign-in failed. Open this page in Chrome or Safari, not inside Discord.",0)})});
+$("submit").addEventListener("click",function(){
+  var em=val("email").toLowerCase();say("Checking...",1);
+  fdb.collection("allowed").doc(em).get().then(function(d){
+    if(!d.exists){say("This Gmail is not on the approved list. Ask the Curator of Project.",0);return}
+    return Promise.all(claimList().map(function(c){return sha(c[0]+":"+c[1]).then(function(h){return c[0]+"_"+h})})).then(function(ids){
+      var b=fdb.batch(),ts=firebase.firestore.FieldValue.serverTimestamp();
+      b.set(fdb.collection("signatures").doc(fuser.uid),{uid:fuser.uid,email:em,name:val("name"),ign:val("ign"),disc:val("disc"),role:val("role"),pcc:pcc(),date:val("date"),ref:refCode(),status:"pending",claims:ids,createdAt:ts});
+      ids.forEach(function(id){b.set(fdb.collection("claims").doc(id),{uid:fuser.uid,email:em})});b.set(fdb.collection("logs").doc(),{type:"signed",uid:fuser.uid,email:em,name:val("name"),role:val("role"),ref:refCode(),at:ts});
+      return b.commit().then(function(){registered=true;regSnap=snap();say("Signature registered. Now download your signed copy and post it.",1);update()})})
+  }).catch(function(e){say(e&&e.code==="permission-denied"?"Already signed: this Gmail, name, in-game ID or Discord ID is already registered. A higher-up must approve a re-sign.":"Could not submit. Try again.",0)})});
+var SIGS=[],ALW=[],LOGS=[];
+function when(t){return t&&t.toDate?t.toDate().toLocaleString("en-GB"):"-"}
+function logEv(type,detail){return fdb.collection("logs").add({type:type,by:fuser.email,detail:detail,at:firebase.firestore.FieldValue.serverTimestamp()})}
+var LBL={signed:"✍️ Signed",approved:"✅ Approved",revoked:"⛔ Revoked",allowed_added:"➕ Gmail allowed",allowed_removed:"➖ Gmail removed"};
+function loadAppr(){
+  Promise.all([fdb.collection("allowed").get(),fdb.collection("signatures").orderBy("createdAt","desc").limit(300).get(),fdb.collection("logs").orderBy("at","desc").limit(300).get()]).then(function(r){
+    ALW=[];r[0].forEach(function(d){ALW.push({id:d.id,note:d.data().note||"",by:d.data().by||""})});
+    SIGS=[];r[1].forEach(function(d){var x=d.data();x.id=d.id;SIGS.push(x)});
+    LOGS=[];r[2].forEach(function(d){LOGS.push(d.data())});renderAppr()},function(){say("Could not load the dashboard. Check the rules and indexes.",0)})}
+function renderAppr(){
+  var q=($("sq").value||"").toLowerCase(),pend=SIGS.filter(function(x){return x.status==="pending"}).length,signed={};SIGS.forEach(function(x){signed[x.email]=1});
+  var notS=ALW.filter(function(a){return !signed[a.id]});
+  $("stats").innerHTML='<div class="how"><div><b>'+ALW.length+'</b>Allowed Gmails</div></div><div class="how"><div><b>'+SIGS.length+'</b>Signed ('+pend+' pending approval)</div></div><div class="how"><div><b>'+notS.length+'</b>Not signed yet</div></div>';
+  var h="";SIGS.filter(function(x){return !q||[x.name,x.email,x.ign,x.disc,x.ref,x.role].join(" ").toLowerCase().indexOf(q)>-1}).forEach(function(x){
+    h+='<div class="ar"><span><b>'+esc(x.name)+'</b> | '+esc(x.role)+'<br><small>Gmail: '+esc(x.email)+' | In-game: '+esc(x.ign)+' | Discord: '+esc(x.disc)+'</small><br><small>Signed: '+when(x.createdAt)+' | Ref: '+esc(x.ref)+' | PC Checker: '+esc(x.pcc)+' | Status: <b>'+esc(x.status)+'</b>'+(x.approvedBy?' by '+esc(x.approvedBy):'')+'</small></span><span>'+(x.status==="pending"?'<button data-a="ap" data-id="'+x.id+'">Approve</button> ':'')+'<button data-a="rv" data-id="'+x.id+'">Revoke</button></span></div>'});
+  $("srows").innerHTML=h||'<p class="note">No signatures found.</p>';
+  $("nlist").innerHTML=notS.length?notS.map(function(a){return '<div class="ar"><span>'+esc(a.id)+' <small>'+esc(a.note)+'</small></span></div>'}).join(""):'<p class="note">Everyone on the allowed list has signed.</p>';
+  $("llog").innerHTML=LOGS.length?LOGS.map(function(x){return '<div class="ar"><span><b>'+(LBL[x.type]||esc(x.type))+'</b> | '+esc(x.name||x.by||"")+(x.role?' | '+esc(x.role):'')+'<br><small>'+when(x.at)+' | '+esc(x.email||x.detail||"")+(x.ref?' | Ref '+esc(x.ref):'')+'</small></span></div>'}).join(""):'<p class="note">No activity yet.</p>';
+  $("arows").innerHTML=ALW.map(function(a){return '<div class="ar"><span>'+esc(a.id)+' <small>'+esc(a.note)+(a.by?' | added by '+esc(a.by):'')+'</small></span><button data-a="rm" data-id="'+esc(a.id)+'">Remove</button></div>'}).join("")||'<p class="note">The allowed list is empty. Add the Gmail of every real admin.</p>'}
+function showTab(t){["slist","nlist","llog","alist"].forEach(function(i){$(i).hidden=i!==t})}
+$("sq").addEventListener("input",function(e){e.stopPropagation();renderAppr()});
+$("aadd").addEventListener("click",function(){var e=$("aemail").value.trim().toLowerCase();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e))return;fdb.collection("allowed").doc(e).set({note:$("anote").value.trim(),by:fuser.email}).then(function(){$("aemail").value="";$("anote").value="";return logEv("allowed_added",e)}).then(loadAppr)});
+$("rl").addEventListener("click",loadAppr);
+$("csv").addEventListener("click",function(){var c=function(v){return '"'+String(v==null?"":v).replace(/"/g,'""')+'"'},rows=[["Signed at","Name","Role","Gmail","In-game","Discord","PC Checker","Date","Ref","Status"].map(c).join(",")];
+  SIGS.forEach(function(x){rows.push([when(x.createdAt),x.name,x.role,x.email,x.ign,x.disc,x.pcc,x.date,x.ref,x.status].map(c).join(","))});
+  var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([rows.join("\n")],{type:"text/csv"}));a.download="signatures.csv";document.body.appendChild(a);a.click();a.remove()});
+$("appr").addEventListener("click",function(e){var t=e.target.closest(".tb");if(t){showTab(t.dataset.t);return}
+  var b=e.target.closest("button[data-a]");if(!b)return;var id=b.dataset.id,a=b.dataset.a,sg=SIGS.filter(function(x){return x.id===id})[0];
+  if(a==="rm")return fdb.collection("allowed").doc(id).delete().then(function(){return logEv("allowed_removed",id)}).then(loadAppr);
+  if(a==="ap")return fdb.collection("signatures").doc(id).update({status:"approved",approvedBy:fuser.email}).then(function(){return logEv("approved",sg?sg.email:id)}).then(loadAppr);
+  if(a==="rv"&&confirm("Revoke this signature? The person can then sign again."))return fdb.collection("signatures").doc(id).get().then(function(d){var bt=fdb.batch();(d.data().claims||[]).forEach(function(c){bt.delete(fdb.collection("claims").doc(c))});bt.delete(d.ref);return bt.commit()}).then(function(){return logEv("revoked",sg?sg.email:id)}).then(loadAppr)});
+if(LOGO_URL){logoImg=new Image();logoImg.onload=function(){update()};logoImg.src=LOGO_URL;$('lgbox').innerHTML='<img alt="Nexus RP" src="'+LOGO_URL+'">'}
+initFB();
+if(document.fonts&&document.fonts.load)Promise.all([document.fonts.load('66px "Dancing Script"'),document.fonts.load('700 24px Inter'),document.fonts.load("600 25px Inter")]).then(update,update);
+update();
+</script>
+
+</body></html>
